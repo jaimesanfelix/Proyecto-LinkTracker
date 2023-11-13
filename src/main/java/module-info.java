@@ -1,8 +1,10 @@
-module com.example.practicafinal {
+module linktracker {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.practicafinal to javafx.fxml;
-    exports com.example.practicafinal;
+    exports linktracker;
+    opens linktracker to javafx.fxml;
+    exports linktracker.utils;
+    opens linktracker.utils to javafx.fxml;
 }

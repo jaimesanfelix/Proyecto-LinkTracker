@@ -1,4 +1,4 @@
-package com.example.practicafinal;
+package linktracker;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,8 +16,8 @@ public class LinkTracker extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(LinkTracker.class.getResource("LinkTracker.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        FXMLLoader fxmlLoader = new FXMLLoader(LinkTracker.class.getResource("FXMLMainView.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         primaryStage.setTitle("Hello!");
         primaryStage.setScene(scene);
         primaryStage.show();
